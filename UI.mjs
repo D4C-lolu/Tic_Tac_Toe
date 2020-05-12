@@ -1,5 +1,5 @@
 //manipulates the UI
-import Store from './store.mjs'
+
 export default class UI{
     
     //prints messages to the screen

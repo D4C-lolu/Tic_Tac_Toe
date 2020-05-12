@@ -1,5 +1,5 @@
 import Store from './store.mjs';
-import UI from './UI.mjs';
+import UI from './UI.mjs'
 
 
 
