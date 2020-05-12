@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Tic Tac Toe</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="card text-white " id="mycard">
+        <img class="card-img-top img-fluid" src="/Assets/gameimage.jpg" alt="card image">
+        <div class="card-img-overlay" id="card">            
+            <div class="card-header d-4 mx-auto text-center" id="header"></div>
+            
+            <form id="my-first-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name here:" aria-describedby="Enter your name">
+                <small id="Enter your name" class="text-muted">Name</small>
+            </div>
+            <div class="mx-auto text-center">
+             <button type="submit" id="submit1" class="btn btn-secondary">Proceed</button>
+            </div>
+            </form>
+        </div>
+      </div>
+    <div class="card text-white" id="gameContent">
+        <img class="card-img-top" src="/Assets/real.jpg" alt="game">
+        <div class="card-img-overlay">
+          <div id="instructions" class="d-4 mx-auto text-center font-weight-bold"></div>
+          <form id="my-second-form">
+            <div class="form-group">
+                <label id="label" for="order">Do you wish to go first?</label>
+                <select class="custom-select" name="order" id="order">
+                    <option selected disabled>Select one</option>
+                    <option value="Y">Yes</option>
+                    <option value="N">No</option>
+                </select>
+             </div>
+            <div class="mx-auto text-center">
+             <button type="submit" id="submit2" class="btn btn-secondary">Start</button>
+            </div>
+         </form>
+         
+         <div class="container text-warning text-center bg-dark " id="status-bar" style="font-size:2rem;"></div>
+         <div class="container text-center text-warning mx-auto" style="font-size:2rem;" id="game-status"></div>
+         
+          <div class="game-container text-center" id="gameGrid">
+            <table class="table">
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+              </tr>
+            </table>
+            
+          </div>
+          <div class="text-center">
+            <button type="input" id="game-reset" class="btn btn-primary mx-auto btn-lg">Restart</button>
+          </div>
+
+          <div class="container bg-dark text-center" id="result-bar">
+            <div class="text-center" id="foo"></div>
+            <div class="text-center">
+              <button type="input" id="game-restart" class="btn btn-primary mx-auto btn-lg">Play again</button>
+            </div>
+          </div>
+         
+          
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <script src="/js/index.js" type="module"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

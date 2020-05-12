@@ -1,0 +1,72 @@
+/* card styling */
+/* body{
+    overflow-y: hidden;
+} */
+
+#mycard{
+    height:100vh;
+    
+    width:100vw;
+}
+
+.card-img-top{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+#gameContent{
+    height:100%;
+    width:100%;
+    display:none;
+}
+
+.game-container{
+    width:60%;
+    margin:20px auto;
+}
+td{
+    border:5px solid #333;
+    height:20vh;
+    width:20vw;
+    border-radius:5px;
+    text-align:center;
+    vertical-align:middle;
+    font-size:4rem;
+    cursor:pointer;
+}
+#result-bar{
+    z-index:1;
+    border-radius:10px;
+    display:none;
+}
+
+#status-bar{
+    z-index:1;
+    border-radius:10px;
+}
+table{
+    border-collapse:collapse;
+    
+    margin-left:auto;
+    margin-right:auto;
+    
+
+}
+
+
+table tr:first-child td{
+    border-top:0;
+}
+
+table tr:last-child td{
+    border-bottom:0;
+}
+
+table tr td:last-child{
+    border-right:0;
+}
+table tr td:first-child{
+    border-left:0;
+}
